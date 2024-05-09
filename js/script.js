@@ -59,13 +59,14 @@ function myFunction() {
     let cb = document.getElementById("cb").value;
     if (nama == "") {
         text += "Nama anda kosong ";
-        if (!validateEmail(email)){
-            text += "Email anda tidak valid ";
-        }
-        if (cb == "0"){
-            text += "Silahkan pilih paket.";
-        }
-    } else {
+    }
+    if (!validateEmail(email)){
+        text += "Email anda tidak valid ";
+    }
+    if (cb == "0"){
+        text += "Silahkan pilih paket.";
+    }
+    if ((nama != "") && (validateEmail(email)) && (cb != "0")){
       text = "Input OK";
     }
     document.getElementById("validation").innerHTML = text;
