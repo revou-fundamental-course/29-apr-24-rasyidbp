@@ -1,0 +1,271 @@
+#blob {
+    background-color: aliceblue;
+    height: 500px;
+    aspect-ratio: 1;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        #A5D7E8,
+        #576CBC
+    );
+    animation: rotate 20s infinite;
+    filter:blur(200px);
+
+}
+
+@keyframes rotate{
+    from{
+        rotate: 0deg;
+    }
+    50%{
+        scale: 1 1.5;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    background-color: #000000;
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #F1F6F9;
+}
+
+
+
+.center{
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 20%;
+    padding-top: 5%;
+}
+
+.logo {
+    height: 30px;
+}
+
+.nav a{
+    background-color: rgba(31, 31, 31, 0.1); /* Green */
+    color: #F1F6F9;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 4px 15px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.nav a:hover{
+    color: #576CBC;
+    font-weight: bold;
+    transition: all 1 ease-in-out;
+}
+
+.container1 {
+    background-color: rgba(31, 31, 31, 0.8);
+    border-radius: 1%;
+    padding: 2%;
+    box-shadow: 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.judul {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+.box1 {
+    display: flex;
+}
+
+.item2 {
+    width: 55%;
+}
+
+.slide-show {
+    width: 100%;
+    display: none;
+    border-radius: 1%;
+}
+
+.komen {
+    display: flex;
+}
+
+.komenPelanggan {
+    display: flex;
+    flex-direction: column;
+}
+
+.gambarPelanggan {
+    width: 65px;
+    aspect-ratio: 1;
+    margin: 1%;
+    border-radius: 50%;
+}
+
+.item3 {
+    width: 45%;
+    background-color: #101010;
+    border-radius: 2%;
+    margin: 15px;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding: 10px;
+    box-shadow: 5px 15px 5px rgba(0, 0, 0, 0.3);
+    height: 100%;
+}
+
+.item3 input{
+    padding: 6px 12px;
+    background: rgb(31, 32, 35);
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 4px;
+    font-size: 13px;
+    color: #F1F6F9;
+    appearance: none;
+    transition: border 0.15s ease 0s;
+    width: 50%;
+}
+
+.validation input:hover {
+    /* Change border color on hover */
+    border-color: #576CBC;
+}
+
+.item3 input:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: rgb(100, 153, 255);
+}
+
+.validation button {
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #576CBC;
+    border-color: #576CBC;
+}
+
+.validation button:hover {
+    color: #F1F6F9;
+    background-color: #576CBC;
+    border-color: #576CBC;
+}
+
+.validation select{
+    color: #F1F6F9;
+    width: 200px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid rgb(60, 63, 68);
+    background-color: rgb(31, 32, 35);
+    font-size: 16px;
+    border-radius: 4px;
+    width: 50%;
+}
+
+.validation select:hover {
+    border-color: #576CBC;
+}
+
+.container2 {
+    background-color: rgba(31, 31, 31, 0.8);
+    border-radius: 1%;
+    padding: 2%;
+    box-shadow: 5px 15px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.kartu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.package {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 2%;
+}
+
+.package h3 {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.package ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.package ul li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .wrapper{
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item2 {
+        width: 100%;
+    }
+
+    .item3 {
+        width: 85%;
+    }
+}

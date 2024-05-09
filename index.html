@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" onmousemove="coordinate(event)">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Rasyid</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head> 
+<body>
+    <div id="blob"></div>
+    <div class="wrapper">
+        <div class="container1" id="home">
+            <div class="item item1 center">
+                <header>
+                    <div><img class="logo" src="img/bijigoreng.png"></div>
+                    <div class="nav">
+                        <a href="#home">Home</a>
+                        <a href="#package">Our Package</a>
+                        <a href="#call">Call Us</a>
+                    </div>
+                </header>
+                <hr>
+                <div class="judul">
+                    <h1>Dari Desain hingga Cetak, Kami Siap Membantu - <span style="color: #576CBC;">Tokopedo'ia Printing</span>.</h1>
+                    <p>Dapatkan materi cetak berkualitas tinggi untuk kebutuhan presentasi dan dokumen penting Anda.</p>
+                </div>
+            </div>
+            <div class="box1">
+                <div class="item item2">
+                    <div>
+                        <img class="slide-show" src="img/ayamkepleset.png">
+                        <img class="slide-show" src="img/babiguling.png">
+                        <img style="display: block;" class="slide-show" src="img/sapisalto.png">
+                        <img class="slide-show" src="img/sotopadadang.png">
+                    </div>
+                    <p class="italic">"Potongan-potongan pada hasil cetak sangat presisi dan tidak ada bagian yang bergerigi atau tidak rata dan bahannya juga berkualitas"</p>
+                    <div class="komen">
+                        <img class="gambarPelanggan" src="img/kuceng.png">
+                        <div class="komenPelanggan">
+                            <p class="pelanggan"><span class="bold" style="color: #A5D7E8;">Rasyid Binaya Pribadi</span><br><span class="italic">Mahasiswa, 21</span></p>
+                        </div>                    
+                    </div>
+                    <div>
+                        <h4>Berikut adalah sebagian dari keuntungan jika memesan dalam perusahaan kami:</h4>
+                        <ol>
+                            <li><p>Teknologi printing modern untuk memastikan hasil yang tajam dan detail.</p></li>
+                            <li><p>Tim ahli kami berpengalaman dalam proses pra-cetak dan pasca-cetak.</p></li>
+                            <li><p>Kami adalah mitra terpercaya untuk bisnis dan individu yang membutuhkan layanan printing terbaik.</p></li>
+                            <li><p>Telah dipercaya selama lamanyo dalam menyediakan solusi printing berkualitas.</p></li>
+                            <li><p>Cetak kartu nama yang profesional dan berkesan untuk membangun relasi bisnis yang kuat.</p></li>
+                            <li><p>Nikmati layanan antar-jemput dokumen gratis untuk searea Jabodetabek.</p></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="item item3">
+                    <div class="validation">
+                        <h3 id="call">Contac Us</h3>
+                        <p>Sales akan menghubungin anda 1x24 Jam setelah data kami terima.</p>
+                        <form action="/action_page.php">
+                            <p>
+                                <label class="bold" for="name">Name:</label><br>
+                                <input type="text" id="name" name="name"><br>
+                            </p>
+                            <p>
+                                <label class="bold" for="email">Email:</label><br>
+                                <input  type="text" id="email" name="email"><br>
+                            </p>
+                            <p>
+                                <label class="bold" for="cb">Pilih paket yang diinginkan:</label><br>
+                                <select name="cb" id="cb">
+                                    <option value="0">1</option>
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                    <option value="3">4</option>
+                                </select>
+                            </p>
+                            <p id="validation"></p>
+                            <button type="button" onclick="myFunction()">Submit</button>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <h1 class="judul" id="package">Our Package</h1>
+        <div class="container2">
+            <div class="kartu">
+                <div class="package">
+                    <h3>Package Basic</h3>
+                    <hr>
+                    <ul>
+                        <li>Cetak 100 lembar A4</li>
+                        <li>HVS 70gsm</li>
+                        <li>Cetak 1 sisi</li>
+                        <li>Tanpa finishing</li>
+                    </ul>
+                </div>
+                <div class="package">
+                    <h3>Package Standard</h3>
+                    <hr>
+                    <ul>
+                        <li>Cetak 200 lembar A4</li>
+                        <li>HVS 100gsm</li>
+                        <li>Cetak 2 sisi</li>
+                        <li>Jilid staples</li>
+                    </ul>
+                </div>
+                <div class="package">
+                    <h3>Package Premium</h3>
+                    <hr>
+                    <ul>
+                        <li>Cetak 500 lembar A4</li>
+                        <li>Art Paper 200gsm</li>
+                        <li>Cetak 2 sisi</li>
+                        <li>Jilid lem hot glue</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="judul">
+                <h4>Kami yakin kami dapat menjadi mitra percetakan tepercaya Anda. Namun, jangan hanya percaya kata-kata kami. Biarkan kami menguji keahlian kami. Kami dengan senang hati menawarkan penawaran gratis atau konsultasi untuk membahas kebutuhan spesifik Anda.<br> Terima kasih atas waktu dan perhatian Anda.</h4>
+            </div>
+            <hr>
+            <img class="logo" src="img/bijigoreng.png">
+            <p>
+                Terms of Serfice | Privacy Policy
+                <br>
+                ©2024 Rasyid Binaya
+            </p>
+        </div>       
+    </div>
+</body>
+</html>
